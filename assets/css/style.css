@@ -752,7 +752,7 @@ p {
 .navbar-nav .nav-item a {
   font-size: 16px;
   font-weight: 600;
-  color: #38424d;
+  color: #c6c6c6;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -774,7 +774,7 @@ p {
 }
 .navbar-nav .nav-item.active > a,
 .navbar-nav .nav-item:hover > a {
-  color: #0898e7;
+  color: #f1c232;
 }
 .navbar-nav .nav-item:hover .sub-menu {
   top: 100%;
@@ -1812,4 +1812,53 @@ a little example that works for me .carousel-control-prev,
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
   width: 30px;
   height: 48px;
+}
+
+.container11 {
+  margin: auto;
+  /* width: 400px; */
+  position: relative;
+  padding: 20px 40px;
+  /* background-color: #f1f1f1; */
+  border-radius: 8px;
+}
+
+.checkpoint_container {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.checkpoint {
+  width: 14px;
+  height: 14px;
+  background-color: #000;
+  border-radius: 100%;
+  box-shadow: 0 0 0 6px rgba(189, 131, 156, 0.2);
+  position: relative;
+}
+
+.checkpoint:hover {
+  box-shadow: 0 0 0 6px rgba(189, 131, 156, 0.2),
+    0 0 10px 9px rgba(189, 131, 156, 0.11);
+  transition: box-shadow 300ms ease-in-out;
+}
+
+.checkpoint_label {
+  position: absolute;
+  top: -4px;
+  left: 38px;
+  font-size: 24px;
+}
+
+.checkpoint_progress {
+  border-left: 3px solid #c0c0c0;
+  box-shadow: 0 0 0 3px #c0c0c0;
+  position: absolute;
+  top: 0;
+  left: 45px;
+  height: 100%;
+}
+
+.heading {
+  text-align: center;
 }
